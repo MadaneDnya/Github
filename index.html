@@ -1,11 +1,179 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-	<title>My Program</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>Portfolio</title>
 </head>
 <body>
 
-<h1>HELLO Dnyaneshwari</h1>
+  <div class="navigation-bar">
+    <nav class="navbar navbar-expand-lg navbar-light">
+      <a class="navbar-brand" href="#"><span class="brand tracking-in-expand ">Dnyaneshwari</span></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#home"><span class="navmenu">Home</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#about"><span class="navmenu">About</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#skills"><span class="navmenu">Skills</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#projects"><span class="navmenu">Projects</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact"><span class="navmenu">Contact</span></a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </div>
 
+  <div class="main-container" >
+    <section class="portfolio-sections" id="home">
+      <div id="home-info">
+        <span class="info">Hii..</span><br/>
+        <span class="info">My name is</span><br/>
+        <span class="brand headd">Dnyaneshwari</span><br/>
+        <button class="rsnbtn" href="demo.pdf">RESUME</button>  
+      </div>
+     
+    </section>
+    <section class="portfolio-sections" id="about">
+      <div class="row">
+
+        <div class="column left">
+          <h1 class="heading">ABOUT</h1>
+          <p id="careerobj">
+            To get an opportunity where I can make the best of my potential and contribute to the organization’s growth.
+          </p>
+        </div>
+        <div class="column right">
+          <img src="https://img.freepik.com/free-photo/motivational-composition-goal-achievement_23-2150490034.jpg" height="350px">
+        </div>
+    </div>
+
+      </div>
+      
+    </section>
+    <section class="portfolio-sections skill-section" id="skills">
+      <h1 class="heading" id="skillhead">SKILLS</h1>
+      <table class="tbl" height="450px" width="90%" cellspacing="50px" style="border-collapse: separate; border-spacing: 3px;">
+        <tr align="center" valign="center">
+          <div class="borderskills">
+            <td class="skill-td" width="32%" height="50%">
+              <h2 class="skills-subheading scale-up-left">Languages</h2>
+              <p class="detailedskills">
+                Core Java , HTML, CSS 
+              </p>
+            </td>
+          </div>
+          <div class="borderskills">
+            <td rowspan="2">
+              <img src="https://imageio.forbes.com/specials-images/imageserve/630317507c39bc12ccfa8c6c/0x0.jpg?format=jpg&height=900&width=1600&fit=bounds" height="300px" width="390" align="center" alt="">
+            </td>
+          </div>
+          <div class="borderskills">
+            <td class="skill-td">
+              <h2 class="skills-subheading scale-up-right">API & Framework</h2>
+              <p class="detailedskills">
+                React JS, Hibernet, Spring, REST API
+              </p>
+            </td>
+          </div>
+        </tr>
+        <tr align="center" valign="center">
+          <div class="borderskills">
+            <td class="skill-td" width="32%" height="50%">
+              <h2 class="skills-subheading scale-up-left">Tools</h2>
+              <p class="detailedskills">
+                EditPlus, Netbeans, VS Code
+              </p>
+            </td>
+          </div>
+          <div class="borderskills">
+            <td class="skill-td">
+              <h2 class="skills-subheading scale-up-right">Operating System</h2>
+              <p class="detailedskills">
+                Wimdows, Ubuntu, Linux, IOS
+              </p>
+            </td>
+          </div>
+        </tr>
+      </table>
+
+    </section>
+    <section class="portfolio-sections project-sect" id="projects">
+      <h1 class="heading" id="prohead">PROJECTS</h1>
+      <div class="card-deck">
+        <div class="card scale-up-center">
+          <img src="data:image/png;base64,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" height="280px" width="250px" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title"><a href="#">Weather Forecast</a></h5>
+            <p class="card-text">This is weather app.</p>
+          </div>
+        </div>
+        <div class="card scale-up-center">
+          <img src="https://cdn2.iconfinder.com/data/icons/ios7-inspired-mac-icon-set/512/Calculator_512.png" height="280px" width="250px" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title"><a href="#">Scientific Calculator</a></h5>
+            <p class="card-text">This is a scientific calculator.</p>
+          </div>
+        </div>
+        <div class="card scale-up-center">
+          <img src="https://cdn-icons-png.flaticon.com/512/1046/1046374.png" height="280px" width="250px" class="card-img-top" padding="5px" alt="...">
+          <div class="card-body">
+            <h5 class="card-title"><a href="#">Student Management System</a></h5>
+            <p class="card-text">This is a Student Management System. </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="portfolio-sections cont-sect" id="contact">
+      <h1 class="heading" id="contacthead">CONTACT</h1> 
+      <div class="contact-tbl" width="90%">
+        <table class="con-tbl" height="400px" width="80%" >
+          <tr>
+            <td width="50%" class="details">
+              <ul type="none">
+                <li><img src="https://i.pinimg.com/736x/a1/d1/4b/a1d14ba7881740c8c3e428a75132a2ae.jpg" height="28px" width="30px" alt=""><a href="#">dnyanumadane82@gmail.com</a></li>
+                <li><img src="https://w7.pngwing.com/pngs/535/35/png-transparent-computer-icons-symbol-linkedin-email-telephone-symbol-miscellaneous-blue-text-thumbnail.png" height="25px" width="30px"><a href="#">Dnyaneshwari Madane</a> </li>
+                <li><img src="https://t4.ftcdn.net/jpg/03/14/12/81/360_F_314128184_yrGYnm4oofWsZvbHdk0v88EP48Hs0ajo.jpg" height="40px" width="40px" alt=""><a href="#">+91 9020000005</a></li>
+              </ul>
+            </td>
+            <td>
+              <div class="form">
+                <form>
+                  <div class="form-group">
+                    <label for="exampleInputEmail1">Email address</label>
+                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                  </div>
+                  <div class="form-group">
+                    <label for="exampleInputtextarea1">Comment</label>
+                    <input type="textarea" class="form-control" id="exampleInputtextarea1" rows="3">
+                  </div>
+                  <button type="submit" class="btn btn-primary">Submit</button>
+                </form>
+              </div>
+            </td>
+          </tr>
+        </table>
+    </section>
+    <section class="footer" id="footr">
+      <span>Made by ©Dnyaneshwari Madane</span>
+    </section>
+  </div>
+
+
+    
 </body>
 </html>
